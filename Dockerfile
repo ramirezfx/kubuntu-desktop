@@ -9,7 +9,7 @@ RUN apt-get install -y git cups wget
 RUN wget -O /tmp/nomachine.deb "https://www.nomachine.com/free/linux/64/deb" && apt-get install -y /tmp/nomachine.deb
 
 # ADD nxserver.sh
-RUN wget -O /nxserver.sh https://github.com/ramirezfx/ubuntu-mate-desktop/raw/main/nxserver.sh && chmod +x /nxserver.sh
+RUN wget -O /nxserver.sh https://github.com/ramirezfx/kubuntu-desktop/raw/main/nxserver.sh && chmod +x /nxserver.sh
 
 # Custom Packages And Sripts:
 RUN wget -O /custom.sh https://github.com/ramirezfx/kubuntu-desktop/raw/main/custom.sh && chmod +x /custom.sh
